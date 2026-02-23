@@ -1,14 +1,23 @@
+import math
+
+allowed_fx = {k: getattr(math, k) for k in dir(math) if not k.startswith("_")}
+
+
 def function(expr: str):
-    #converts a string to a function
+    #Convert string to function
     def f(x):
-        return eval(expr)
+        allowed = {"x": x, **allowed_fx}
+        return eval(expr, {"__builtins__": {}}, allowed)
     return f
 
-def bisxn(func, a, b, accuracy = 1e-6, max_iterations = 200):
 
+#Bisection method
+def bisxn(func, a, b, accuracy =1e-6, max_iterations=200):
     if func(a) * func(b) >= 0:
-        raise ValueError("f(a) and f(b) have the same sign")
-    
+        raise ValueError(
+            "f(a) and f(b) have the same sign"
+        )
+
     iteration = 1
     while iteration <= max_iterations:
         c = (a + b) / 2.0
