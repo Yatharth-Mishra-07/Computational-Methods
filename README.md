@@ -1,8 +1,8 @@
 Computational methods I learn in my coursework implemented using python
 
-For bisection method: 
+**For bisection method:**
 
-enter the function f(x). All math module functions allowed. Example: sin(x) - x**2, e**x - 10, etc.
+enter the function f(x). All math module functions and x allowed. Example: x^3 - x^2, sin(x) - tan(x), etc.
 
 enter the start and end of the intervals in which the program will look for roots.
 
@@ -10,8 +10,9 @@ enter accuracy ( (actual root - approximate root) will be less than the given ac
 
 
 
-For secant method:
-enter the function f(x). All math module functions allowed. Example: sin(x) - x**2, e**x - 10, etc.
+**For secant method:**
+
+enter the function f(x). All math module functions and x allowed. Example: x^3 - x^2, sin(x) - tan(x), etc.
 
 enter the the initial guess values (x0 and x1)
 
