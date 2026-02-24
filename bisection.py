@@ -44,6 +44,7 @@ def bisxn(func, a, b, accuracy =1e-6, max_iterations=200):
 if __name__ == "__main__":
 
     expr = input("f(x) = ")
+    expr = expr.replace("^", "**")
     func = function(expr)
 
     a = float(input("Enter interval start 'a': "))

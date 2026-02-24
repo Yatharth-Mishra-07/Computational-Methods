@@ -45,6 +45,7 @@ def secant(func, x0, x1, accuracy=1e-6, max_iterations=200):
 if __name__ == "__main__":
 
     expr = input("f(x) = ")
+    expr = expr.replace("^", "**")
     func = function(expr)
     
     x0 = float(input("Enter x0: "))
