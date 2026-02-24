@@ -18,6 +18,9 @@ def secant(func, x0, x1, accuracy=1e-6, max_iterations=200):
 
     while iteration <= max_iterations:
 
+        if y1 - y0 == 0:
+            raise ZeroDivisionError("Division by zero in secant formula")
+
         x2 = x1 - y1 * (x1 - x0) / (y1 - y0)
         y2 = func(x2)
 
