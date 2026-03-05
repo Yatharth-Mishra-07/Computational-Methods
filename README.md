@@ -17,3 +17,12 @@ enter the function f(x). All math module functions and x allowed. Example: x^3 -
 enter the the initial guess values (x0 and x1)
 
 enter the desired accuracy 
+
+
+**For Newton Raphson method:**
+
+enter the function f(x). All math module functions and x allowed. Example: x^3 - x^2, sin(x) - tan(x), etc.
+
+Enter the derivative f'(x) of the given function f(x). If the wrong derivative is given, the answer will be wrong as well.
+
+Enter a guess value
